@@ -1,6 +1,6 @@
 import { createElement, createLink } from '../utils/dom.js';
 import { createSearch } from '../components/search.js';
-import { createAddUserForm } from '../components/forms.js';
+import { createAddUserForm, createAddTodoForm } from '../components/forms.js';
 import { createBreadcrumbs } from '../components/breadcrumbs.js';
 import { showUsersList } from '../components/lists.js';
 import { getUsers } from '../api/users.js';
@@ -88,5 +88,8 @@ function showTodoForm(userId, userName, app) {
     const existingForm = document.querySelector('.add-form');
     if (existingForm) existingForm.remove();
     
-    alert(`Добавление задачи для пользователя: ${userName}`);
+    const form = createAddTodoForm(userId, userName, () => {
+    });
+    app.appendChild(form);
 }
+

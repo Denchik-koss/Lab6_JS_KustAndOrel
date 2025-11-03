@@ -78,6 +78,7 @@ body {
 }
 
 .delete-btn:hover {
+    transform: scale(1.05);
     background: #c82333;
 }
 
@@ -168,3 +169,78 @@ h1 {
     transform: scale(1.05);
     background: #f58d3e;
 }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.modal-form {
+    margin: 0;
+    border-radius: 8px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    margin: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
