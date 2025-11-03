@@ -11,6 +11,12 @@ export function createBreadcrumbs() {
     if (hash.includes('#todos')) {
         links.push({ text: 'Задачи', hash: '#users#todos' });
     }
+    if (hash.includes('#posts')) {
+            links.push({ text: 'Посты', hash: '#users#posts' });
+    }
+    if (hash.includes('#comments')) {
+            links.push({ text: 'Комментарии', hash: '#users#posts#comments' });
+    }
     
     links.forEach((link, index) => {
         if (index > 0) {
